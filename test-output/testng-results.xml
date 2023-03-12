@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-03-12T13:47:26 IST" name="Default suite" finished-at="2023-03-12T13:47:36 IST" duration-ms="9415">
+    <groups>
+    </groups>
+    <test started-at="2023-03-12T13:47:26 IST" name="Default test" finished-at="2023-03-12T13:47:36 IST" duration-ms="9415">
+      <class name="testSuite.LoginSalesforce_TEXTNG">
+        <test-method is-config="true" signature="launch()[pri:0, instance:testSuite.LoginSalesforce_TEXTNG@15bb5034]" started-at="2023-03-12T13:47:26 IST" name="launch" finished-at="2023-03-12T13:47:33 IST" duration-ms="6728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch -->
+        <test-method signature="LoginToSalesForce(java.lang.String,java.lang.String)[pri:0, instance:testSuite.LoginSalesforce_TEXTNG@15bb5034]" started-at="2023-03-12T13:47:35 IST" name="LoginToSalesForce" data-provider="AccAdd" finished-at="2023-03-12T13:47:35 IST" duration-ms="366" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hari.radhakrishnan@qeagle.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Leaf@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[No enum constant base.LocatorType.LOGIN]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: No enum constant base.LocatorType.LOGIN
+at java.base/java.lang.Enum.valueOf(Enum.java:273)
+at base.LocatorType.valueOf(LocatorType.java:1)
+at base.seleniumBase.getWebElement(seleniumBase.java:125)
+at pages.SalesForce_Login_page.clicklogin(SalesForce_Login_page.java:19)
+at testSuite.LoginSalesforce_TEXTNG.LoginToSalesForce(LoginSalesforce_TEXTNG.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginToSalesForce -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testSuite.LoginSalesforce_TEXTNG@15bb5034]" started-at="2023-03-12T13:47:35 IST" name="afterMethod" finished-at="2023-03-12T13:47:36 IST" duration-ms="358" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginToSalesForce status=FAILURE method=LoginSalesforce_TEXTNG.LoginToSalesForce(java.lang.String,java.lang.String)[pri:0, instance:testSuite.LoginSalesforce_TEXTNG@15bb5034] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="closebrowser()[pri:0, instance:testSuite.LoginSalesforce_TEXTNG@15bb5034]" started-at="2023-03-12T13:47:36 IST" name="closebrowser" finished-at="2023-03-12T13:47:36 IST" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebrowser -->
+      </class> <!-- testSuite.LoginSalesforce_TEXTNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
