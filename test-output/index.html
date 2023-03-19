@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\INSURS1\AppData\Local\Temp\testng-eclipse--2022209569\testng-customsuite.xml</span>
+                    <span>C:\Users\INSURS1\AppData\Local\Temp\testng-eclipse-386640434\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -133,9 +133,9 @@
                   <div class="stack-trace">java.lang.IllegalArgumentException: No enum constant base.LocatorType.LOGIN
 	at java.base/java.lang.Enum.valueOf(Enum.java:273)
 	at base.LocatorType.valueOf(LocatorType.java:1)
-	at base.seleniumBase.getWebElement(seleniumBase.java:125)
-	at pages.SalesForce_Login_page.clicklogin(SalesForce_Login_page.java:19)
-	at testSuite.LoginSalesforce_TEXTNG.LoginToSalesForce(LoginSalesforce_TEXTNG.java:22)
+	at base.seleniumBase.getWebElement(seleniumBase.java:126)
+	at pages.SalesForce_Login_page.clicklogin(SalesForce_Login_page.java:21)
+	at testSuite.LoginSalesforce_TEXTNG.LoginToSalesForce(LoginSalesforce_TEXTNG.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,7 +173,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\INSURS1\AppData\Local\Temp\testng-eclipse--2022209569\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\INSURS1\AppData\Local\Temp\testng-eclipse-386640434\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -182,11 +182,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testSuite.LoginSalesforce_TEXTNG&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;LoginToSalesForce&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testSuite.LoginSalesforce_TEXTNG --&gt;
+      &lt;class name=&quot;testSuite.LoginSalesforce_TEXTNG&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -230,12 +226,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginToSalesForce')
 data.setCell(0, 2, 'testSuite.LoginSalesforce_TEXTNG')
-data.setCell(0, 3, 366);
+data.setCell(0, 3, 358);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 366 ms</span>
+              <span class="suite-total-time">Total running time: 358 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -262,24 +258,42 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">testSuite.LoginSalesforce_TEXTNG</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">launch</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">426 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">5287 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTestCase</span>
+                <span class="method-start">5363 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">LoginToSalesForce(hari.radhakrishnan@qeagle.com, Leaf@123)</span>
-                <span class="method-start">8494 ms</span>
+                <span class="method-start">6364 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">afterMethod([TestResult name=LoginToSalesForce status=FAILURE method=LoginSalesforce_TEXTNG.LoginToSalesForce(ja...)</span>
-                <span class="method-start">8887 ms</span>
+                <span class="method-start">6728 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">closebrowser</span>
-                <span class="method-start">9251 ms</span>
+                <span class="method-start">6742 ms</span>
               </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">endResult</span>
+                <span class="method-start">7156 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

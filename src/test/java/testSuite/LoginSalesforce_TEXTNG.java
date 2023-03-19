@@ -4,12 +4,26 @@ import static org.testng.Assert.assertEquals;
 
 import java.io.IOException;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import base.seleniumBase;
 import pages.SalesForce_Login_page;
 import testDataProvider.AccountDataprovider;
 import testHooks.TestNgHooks;
+import util.ConfigReader;
+import util.Reporter;
 
 public class LoginSalesforce_TEXTNG extends TestNgHooks{
+	
+	@BeforeTest
+	public void beforeTest() {
+		testcaseName = "Edit Account";
+		testDescription = "Verify Edit Account";
+		authors = "Bharani R";
+		category = "Reg";
+		//excelFileName="Account";
+	}
 	
 	
 	@Test(dataProviderClass = AccountDataprovider.class, dataProvider = "AccAdd")
@@ -39,7 +53,17 @@ public class LoginSalesforce_TEXTNG extends TestNgHooks{
 		}
 
 */	}
-
+//@Test
+public void Create_Account() {
+	
+	
+	
+}
+@Override
+public byte[] takeSnap() {
+	// TODO Auto-generated method stub
+	return null;
+}
 	
 	//@AfterMethod
 /*

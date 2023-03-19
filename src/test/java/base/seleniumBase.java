@@ -22,12 +22,13 @@ import org.openqa.selenium.support.ui.Select;
 
 import com.graphbuilder.curve.CatmullRomSpline;
 
-public class seleniumBase implements ISeleniumBaseDesign {
+import util.Reporter;
+
+public class seleniumBase extends Reporter implements ISeleniumBaseDesign {
 
 	public static WebDriver driver;
 	
 
-	@Override
 	public WebDriver browser(String browserName) {
 		Browsertype browsers = Browsertype.valueOf(browserName);
 		switch (browsers) {
@@ -81,7 +82,7 @@ public class seleniumBase implements ISeleniumBaseDesign {
 		return driver;
 	}
 
-	@Override
+	 
 	public void closeBrowser() {
 		try {
 			driver.close();
@@ -92,7 +93,7 @@ public class seleniumBase implements ISeleniumBaseDesign {
 		}
 	}
 
-	@Override
+	 
 	public void quitBrowser() {
 		
 		try {
@@ -106,7 +107,7 @@ public class seleniumBase implements ISeleniumBaseDesign {
 
 	}
 
-	@Override
+	 
 	public void open(String aut) {
 		try {
 			driver.get(aut);
@@ -118,7 +119,7 @@ public class seleniumBase implements ISeleniumBaseDesign {
 
 	}
 
-	@Override
+	 
 	public WebElement getWebElement(String locator) {
 		WebElement element = null;
 		String[] spilt = locator.split("=", 2);
@@ -160,7 +161,7 @@ public class seleniumBase implements ISeleniumBaseDesign {
 		return element;
 	}
 
-	@Override
+	 
 	public List<WebElement> getWebElements(String locator) {
 		List<WebElement> element = null;
 		String[] spilt = locator.split("=", 2);
@@ -201,38 +202,38 @@ public class seleniumBase implements ISeleniumBaseDesign {
 
 	}
 
-	@Override
+	 
 	public void type(WebElement ele, String data) {
 		ele.sendKeys(data);
 
 	}
 
-	@Override
+	 
 	public void click(WebElement ele) {
 		ele.click();
 
 	}
 
-	@Override
+	 
 	public String getText(WebElement ele) {
 		String text = ele.getText();
 		return text;
 	}
 
-	@Override
+	 
 	public void selectValueInDropdown(WebElement ele, String text) {
 		Select sel = new Select(ele);
 		sel.selectByVisibleText(text);
 
 	}
 
-	@Override
+	 
 	public void moveToParticularElement(WebElement ele) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	 
 	public void switchToWindow(int index) {
 		String mainWindowHandle = driver.getWindowHandle();
 		Set<String> allWindowHandles = driver.getWindowHandles();
@@ -249,13 +250,13 @@ public class seleniumBase implements ISeleniumBaseDesign {
 
 	}
 
-	@Override
+	 
 	public void switchToFrame(WebElement ele) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	 
 	public byte[] takeSnap() {
 
 		return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
@@ -264,7 +265,7 @@ public class seleniumBase implements ISeleniumBaseDesign {
 
 	}
 
-	@Override
+	 
 	public void JSEClick(WebElement ele) {
 
 		JavascriptExecutor executor = (JavascriptExecutor) driver;

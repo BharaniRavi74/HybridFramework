@@ -36,6 +36,7 @@ public interface ISeleniumBaseDesign {
 	public byte[] takeSnap();
 	
 	public void JSEClick(WebElement ele);
+	
 
 	//void switchToWindow(int index, WebElement element);
 
